@@ -66,7 +66,7 @@ class modCRMClientConnector extends DolibarrModules
 
 		// DESCRIPTION_FLAG
 		// Module description, used if translation string 'ModuleCRMClientConnectorDesc' not found (CRMClientConnector is name of module).
-		$this->description = "CRMClientConnectorDescription";
+		$this->description = "ModuleCRMClientConnectorDesc";
 		// Used only if file README.md and README-LL.md not found.
 		$this->descriptionlong = "CRMClientConnectorDescription";
 
@@ -382,7 +382,7 @@ class modCRMClientConnector extends DolibarrModules
 		$this->menu[$r++]=array(
 			'fk_menu'=>'fk_mainmenu=tools',
 			'type'=>'left',
-			'titre'=>'CRM client connector',
+			'titre'=>'CRMClientConnectorMenu',
 			'prefix' => img_picto('', 'email', 'class="paddingright pictofixedwidth valignmiddle"'),
 			'mainmenu'=>'tools',
 			'leftmenu'=>'emailaccount',
@@ -398,7 +398,7 @@ class modCRMClientConnector extends DolibarrModules
 		$this->menu[$r++]=array(
 			'fk_menu'=>'fk_mainmenu=tools,fk_leftmenu=emailaccount',
 			'type'=>'left',
-			'titre'=>'List email accounts',
+			'titre'=>'ListOfEmailAccounts',
 			'mainmenu'=>'tools',
 			'leftmenu'=>'emailaccount_list',
 			'url'=>'/crmclientconnector/emailaccount_list.php',
@@ -413,7 +413,7 @@ class modCRMClientConnector extends DolibarrModules
 		$this->menu[$r++]=array(
 			'fk_menu'=>'fk_mainmenu=tools,fk_leftmenu=emailaccount',
 			'type'=>'left',
-			'titre'=>'New Email account',
+			'titre'=>'NewEmailAccount',
 			'mainmenu'=>'tools',
 			'leftmenu'=>'emailaccount_new',
 			'url'=>'/crmclientconnector/emailaccount_card.php?action=create',
